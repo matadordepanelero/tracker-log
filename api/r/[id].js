@@ -45,7 +45,7 @@ export default async function handler(req, res) {
   }).catch(err => console.error("Erro no webhook:", err));
 
   const destinos = {
-    promo1: "https://exemplo.com/promocao",
+    promo1: "https://google.com",
   };
 
   res.redirect(302, destinos[id] || "https://google.com");
